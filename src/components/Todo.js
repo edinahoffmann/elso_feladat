@@ -42,22 +42,22 @@ function Todo(props) {
               New name for {props.name}
             </label>
             <input
-  id={props.id}
-  className="todo-text"
-  type="text"
-  value={newName}
-  onChange={handleChange}
-  ref={editFieldRef}
-/>
-          </div>
-          <div className="btn-group">
-          <button
-  type="button"
-  className="btn todo-cancel"
-  onClick={() => setEditing(false)}>
-  Cancel
-  <span className="visually-hidden">renaming {props.name}</span>
-</button>
+                id={props.id}
+                className="todo-text"
+                type="text"
+                value={newName}
+                onChange={handleChange}
+                ref={editFieldRef}
+            />
+            </div>
+            <div className="btn-group">
+            <button
+                type="button"
+                className="btn todo-cancel"
+                onClick={() => setEditing(false)}>
+                Cancel
+                <span className="visually-hidden">renaming {props.name}</span>
+            </button>
             <button type="submit" className="btn btn__primary todo-edit">
               Save
               <span className="visually-hidden">new name for {props.name}</span>
@@ -80,12 +80,12 @@ function Todo(props) {
           </div>
           <div className="btn-group">
           <button
-  type="button"
-  className="btn"
-  onClick={() => setEditing(true)}
-  ref={editButtonRef}>
-  Edit <span className="visually-hidden">{props.name}</span>
-</button>
+            type="button"
+            className="btn"
+            onClick={() => setEditing(true)}
+            ref={editButtonRef}>
+            Edit <span className="visually-hidden">{props.name}</span>
+          </button>
             <button
               type="button"
               className="btn btn__danger"
